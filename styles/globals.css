@@ -1,0 +1,121 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0%;
+}
+
+body>div {
+  overflow-x: hidden;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a:hover {
+  color: #946611;
+  /* text-decoration: underline; */
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.bg-size {
+  background-size: 100% 100%;
+}
+
+@media (max-width:800px) {
+  .bg-size {
+    background-size: cover !important;
+    background-position: center;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #ffde59;
+  font-size: 8px;
+  border: 2px solid rgb(107, 107, 107);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  padding-right: 1px;
+}
+
+.slick-dots li button:before {
+  width: 17px;
+  height: 17px;
+  opacity: .75;
+  color: white;
+  border: 2px solid rgb(107, 107, 107);
+  border-radius: 50%;
+}
+
+.slick-dots {
+  position: relative;
+  bottom: 0;
+}
+
+.slick-dots li {
+  margin: 0 2px;
+}
+
+/* header css */
+.mini-header {
+  width: 100%;
+}
+
+.mini-header img {
+  height: 18px;
+}
+
+.mini-header div span {
+  /* font-family: General Sans; */
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  /* line-height: 27.9px; */
+}
+
+.header-menu a {
+  /* font-family: General Sans; */
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 27.9px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.header-menu a:hover,
+.active {
+  color: #ffde59 !important;
+  transition: all .2s ease-in-out;
+}
+
+
+.book-btn {
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #ffde59;
+  /* color: white; */
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.custom-shadow:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
